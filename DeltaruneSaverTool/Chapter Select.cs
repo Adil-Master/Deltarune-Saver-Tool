@@ -19,24 +19,39 @@ namespace DeltaruneSaverTool
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Chapter_2 chapter_2 = new Chapter_2();
-
-            this.Hide();
-
-            if (chapter_2.ShowDialog() == DialogResult.Cancel)
+            
+            if (DeltaruneSaverTool.Properties.Settings.Default.Saves_Path != "null")
             {
-                this.Show();
+                Chapter_2 chapter_2 = new Chapter_2();
+
+                this.Hide();
+
+                if (chapter_2.ShowDialog() == DialogResult.Cancel)
+                {
+                    this.Show();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Select saves path in settings!");
             }
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            Chapter_1 chapter_1 = new Chapter_1();
-            
-            this.Hide();
-            
-            if (chapter_1.ShowDialog() == DialogResult.Cancel)
+            if (DeltaruneSaverTool.Properties.Settings.Default.Saves_Path != "null")
             {
-                this.Show();
+                Chapter_1 chapter_1 = new Chapter_1();
+
+                this.Hide();
+
+                if (chapter_1.ShowDialog() == DialogResult.Cancel)
+                {
+                    this.Show();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Select saves path in settings!");
             }
         }
 
@@ -48,25 +63,40 @@ namespace DeltaruneSaverTool
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Chapter_3 chapter_3 = new Chapter_3();
-
-            this.Hide();
-
-            if (chapter_3.ShowDialog() == DialogResult.Cancel)
+            if (DeltaruneSaverTool.Properties.Settings.Default.Saves_Path != "null")
             {
-                this.Show();
+                Chapter_3 chapter_3 = new Chapter_3();
+
+                this.Hide();
+
+                if (chapter_3.ShowDialog() == DialogResult.Cancel)
+                {
+                    this.Show();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Select saves path in settings!");
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Chapter_4 chapter_4 = new Chapter_4();
-
-            this.Hide();
-
-            if (chapter_4.ShowDialog() == DialogResult.Cancel)
+            
+            if (DeltaruneSaverTool.Properties.Settings.Default.Saves_Path != "null")
             {
-                this.Show();
+                Chapter_4 chapter_4 = new Chapter_4();
+
+                this.Hide();
+
+                if (chapter_4.ShowDialog() == DialogResult.Cancel)
+                {
+                    this.Show();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Select saves path in settings!");
             }
         }
 
